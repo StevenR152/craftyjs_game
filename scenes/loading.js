@@ -1,12 +1,14 @@
 Crafty.defineScene("Loading", function() {
-    Crafty.background("#EEE");
+    Crafty.background("#AAA");
     Crafty.e("2D, DOM, Text")
           .attr({ w: 200, h: 50, x: 200, y: 280 })
           .text("Loading")
           .textAlign("center")
           .textColor("#111");
  	
+    // Game Assets would be a list of images, but this tutorial doesn't use them.
     var gameAssets = {};
+
   	Crafty.load(gameAssets, function(){
        setTimeout(function () {
          Crafty.scene('Game');
