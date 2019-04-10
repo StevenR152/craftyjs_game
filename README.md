@@ -29,7 +29,7 @@ The patten here is you define a entity by using Crafty.e , pass in a bunch of Co
 
 
 # Where should I start?
-So now you have a red square, awesome! How about we make a game?
+So now you have a red square, awesome! How about we start making a game?
 
 1. Read the [CraftyJS Getting Started](http://craftyjs.com/getting-started/) to get up to speed with the basics of Crafty JS.
 2. But we need more than red squares and movement... take a quick browse at the full API [CraftyJS API](http://craftyjs.com/api/)
