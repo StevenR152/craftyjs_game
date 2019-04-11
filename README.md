@@ -41,16 +41,16 @@ file:///C:/Users/Steven2/Documents/Projects/craftyjs_template/index.html into my
 # Lets add to the game
 1. I've broken this app into 2 Scenes, a loading and a game scene, take a look at them both in the scenes folder. 
 2. The loading scene isn't needed since we are not loading any images or resources, I added it to illustrate how you separate scenes (so you could add main menus or highscores as a scene) 
-3. It's easier to develop update the main.js file to load the 'Game' scene first so you don't have to see the loading screen when developing.
-4. Look at the API's Control component and find the 'Twoway' Component, use this to make your square move using the arrow / WADS keys.
-5. Look at the API's 'Gravity' component add this and see what happens to your cube.
-6. Wow so awesome, the player moves, how about we add 3 more platforms the players cube can stop falling and stand on them. 
+3. So it's easier to develop update the main.js file to load the 'Game' scene first so you don't have to see the loading screen when developing.
+4. Look at the API's Control component and find the 'Twoway' Component, use this to make your red square move using the arrow / WADS keys.
+5. Look at the API's 'Gravity' component add this to the red square and see what happens to your cube.
+6. Wow so awesome, the player moves, how about we add 3 more platforms the players cube can stop falling and stand on them jumping between them.
 
-## Extra for experts
+## Extra for experts - do them in any order you want!
 1. Add a item the player can pickup like coins in mario (hint: create a yellow square, and make it get deleted if a collision is detected between player and yellow square)?
 2. Can you add a score for coins collected?
 3. Can you make the camera follow the player like a true platformer?
-4. Make a series of levels the player moves through to complete the game. 
+4. Make a series of levels the player moves through to complete the game maybe they need to walk into a brown door rectangle to progress levels.
 5. Display the score as text, and add a highscore screen.
 
 ## Outside the box ideas
