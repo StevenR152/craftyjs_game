@@ -51,7 +51,8 @@ file:///C:/Users/Steven2/Documents/Projects/craftyjs_template/index.html into my
 4. Make a series of levels the player moves through to complete the game. 
 5. Display the score as text, and add a highscore screen.
 
-# Outside the box ideas
+## Outside the box ideas
 1. Make a blue circle that teleports the player to the location of a green circle?
 2. Make a square that inverts gravity?
+3. Sick of boxes?, maybe you can lookup how to image load in the loading screen and use the image on the player?
 
