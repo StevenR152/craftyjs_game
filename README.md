@@ -5,6 +5,7 @@ It provides:
 - 'index.html' file for the webpage structure
 - a CSS style sheet to form a 'nicer on the eyes' page to look at.
 - a basic javascript file which is the start of the game application.
+- ignore the circleci directory, thats a lesson for another day :)
 
 # What is Crafty JS?
 
@@ -33,7 +34,8 @@ So now you have a red square, awesome! How about we start making a game? The fol
 1. Read the getting [CraftyJS Getting Started](http://craftyjs.com/getting-started/) to get up to speed with the basics of Crafty JS.
 2. But Steve, red squares are interesting but I want to make so much more!... take a quick browse at the [CraftyJS API](http://craftyjs.com/api/)
 3. Clone the repository and look around the project.
-4. Access the game in your browser by going to the location you installed the game at for example I typed:
+4. MAKE A BRANCH FOR YOUR WORK using your name.
+5. Access the game in your browser by going to the location you installed the game at for example I typed:
 file:///C:/Users/Steven2/Documents/Projects/craftyjs_template/index.html into my browser. You need to use the location it installed for you, use file explorer or ask a friend to help you find this.
 
 # Lets add to the game
@@ -56,3 +58,11 @@ file:///C:/Users/Steven2/Documents/Projects/craftyjs_template/index.html into my
 2. Make a square that inverts gravity?
 3. Sick of boxes?, maybe you can lookup how to image load in the loading screen and use the image on the player?
 
+# Access your game online
+Whenever you push your branch to the repo it will update online here:
+https://s3-eu-west-1.amazonaws.com/codersuk-craftyjs-game/<BRANCH NAME>/index.html
+  
+For example master can be found here:
+[
+https://s3-eu-west-1.amazonaws.com/codersuk-craftyjs-game/master/index.html](
+https://s3-eu-west-1.amazonaws.com/codersuk-craftyjs-game/master/index.html)
