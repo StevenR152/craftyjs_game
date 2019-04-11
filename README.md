@@ -60,7 +60,7 @@ file:///C:/Users/Steven2/Documents/Projects/craftyjs_template/index.html into my
 
 # Access your game online
 Whenever you push your branch to the repo it will update online here:
-https://s3-eu-west-1.amazonaws.com/codersuk-craftyjs-game/<BRANCH NAME>/index.html
+https://s3-eu-west-1.amazonaws.com/codersuk-craftyjs-game/BRANCHNAME/index.html
   
 For example master can be found here:
 [
