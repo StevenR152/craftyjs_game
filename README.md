@@ -2,7 +2,7 @@
 This repository is providing the basic setup of building 2D games on a HTML Canvas.
 
 It provides:
-- 'index.html' file for the webpage structure
+- the 'index.html' file for the webpage structure
 - a CSS style sheet to form a 'nicer on the eyes' page to look at.
 - a basic javascript file which is the start of the game application.
 - ignore the circleci directory, thats a lesson for another day :)
