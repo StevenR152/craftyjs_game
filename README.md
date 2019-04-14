@@ -32,22 +32,22 @@ So now you have a red square, awesome! How about we start making a game? The fol
 
 # Understand Craftyjs and the project
 1. Read the getting [CraftyJS Getting Started](http://craftyjs.com/getting-started/) to get up to speed with the basics of Crafty JS.
-2. But Steve, red squares are interesting but I want to make so much more!... take a quick browse at the [CraftyJS API](http://craftyjs.com/api/)
+2. But red squares are interesting but I want to make so much more!... take a quick browse at the [CraftyJS API](http://craftyjs.com/api/)
 3. Clone the repository and look around the project.
 4. MAKE A BRANCH FOR YOUR WORK using your name.
-5. Access the game in your browser by going to the location you installed the game at for example I typed:
-file:///C:/Users/Steven2/Documents/Projects/craftyjs_template/index.html into my browser. You need to use the location it installed for you, use file explorer or ask a friend to help you find this.
+5. Access the game in your browser by going to the location you installed the game at, for example I typed:
+file:///C:/Users/Steven/Projects/craftyjs_template/index.html into my browser. You need to use the location it installed for you, use file explorer or ask a friend to help you find this.
 
 # Lets add to the game
 1. I've broken this app into 2 Scenes, a loading and a game scene, take a look at them both in the scenes folder. 
-2. The loading scene isn't needed since we are not loading any images or resources, I added it to illustrate how you separate scenes (so you could add main menus or highscores as a scene) 
-3. So it's easier to develop update the main.js file to load the 'Game' scene first so you don't have to see the loading screen when developing.
+2. The loading scene isn't needed since we are not loading any images or resources, I added it to illustrate how you separate scenes (so you could add main menus or highscores as a scene later on). Note the names of the scene's on the first line of the scene files.
+3. So it's easier to develop let's update the main.js file to load the 'Game' scene first so you don't have to see the loading screen when developing new features of your game.
 4. Look at the API's Control component and find the 'Twoway' Component, use this to make your red square move using the arrow / WADS keys.
 5. Look at the API's 'Gravity' component add this to the red square and see what happens to your cube.
-6. Wow so awesome, the player moves, how about we add 3 more platforms the players cube can stop falling and stand on them jumping between them.
+6. Wow so awesome, the player moves, how about we add 3 more platforms the players cube can stand on them jumping between them.
 
 ## Extra for experts - do them in any order you want!
-1. Add a item the player can pickup like coins in mario (hint: create a yellow square, and make it get deleted if a collision is detected between player and yellow square)?
+1. Add a item the player can pickup - like coins in mario (hint: create a yellow square, and make it get deleted if a collision is detected between player and yellow square)?
 2. Can you add a score for coins collected?
 3. Can you make the camera follow the player like a true platformer?
 4. Make a series of levels the player moves through to complete the game maybe they need to walk into a brown door rectangle to progress levels.
