@@ -57,12 +57,3 @@ file:///C:/Users/Steven/Projects/craftyjs_template/index.html into my browser. Y
 1. Make a blue circle that teleports the player to the location of a green circle?
 2. Make a square that inverts gravity?
 3. Sick of boxes?, maybe you can lookup how to image load in the loading screen and use the image on the player?
-
-# Access your game online
-Whenever you push your branch to the repo it will update online here after about 30 seconds:
-https://s3-eu-west-1.amazonaws.com/codersuk-craftyjs-game/BRANCHNAME/index.html
-  
-For example master can be found here:
-[
-https://s3-eu-west-1.amazonaws.com/codersuk-craftyjs-game/master/index.html](
-https://s3-eu-west-1.amazonaws.com/codersuk-craftyjs-game/master/index.html)
