@@ -43,6 +43,16 @@ var assetsObj = {
             "tileh": 171,
             "map": { "rampnorth": [0,0] }
         },
+        "images/tiles/Tree Short.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "tree": [0,0] }
+        },
+        "images/tiles/Rock.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "rock": [0,0] }
+        },
     },
 };
 
