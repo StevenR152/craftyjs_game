@@ -21,6 +21,10 @@ class World {
 		}
 	}
 
+	renderShadows (layerIndex) {
+
+	}
+	
 	render() {
 		for(var layerIndex = world.length -1; layerIndex >= 0; layerIndex--){
 			this.renderLayer(layerIndex, "base", tileIdToImage);
