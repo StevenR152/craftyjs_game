@@ -6,7 +6,7 @@ Crafty.defineScene("Game", function() {
 	var world = new World(worldGrid);
 	world.render();
 
-	var player = Crafty.e("2D, DOM, Keyboard, characterboy")
+	var player = Crafty.e("Grid, Keyboard, characterboy")
 		.attr({x: 10 * 101, y: 10 * 81, w: 101, h: 171})	
 		.bind('KeyDown', function(e) {
 			if (e.key == Crafty.keys.LEFT_ARROW) {
