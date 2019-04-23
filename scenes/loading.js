@@ -53,6 +53,7 @@ var assetsObj = {
             "tileh": 171,
             "map": { "rock": [0,0] }
         },
+        
         "images/tiles/Shadow East.png": {
             "tile": 101,
             "tileh": 171,
@@ -72,6 +73,32 @@ var assetsObj = {
             "tile": 101,
             "tileh": 171,
             "map": { "shadowWest": [0,0] }
+        },
+
+        "images/tiles/Shadow North East.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "shadowNorthEast": [0,0] }
+        },
+        "images/tiles/Shadow North West.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "shadowNorthWest": [0,0] }
+        },
+        "images/tiles/Shadow Side West.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "shadowSideWest": [0,0] }
+        },
+        "images/tiles/Shadow South East.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "shadowSouthEast": [0,0] }
+        },
+        "images/tiles/Shadow South West.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "shadowSouthWest": [0,0] }
         },
     },
 };

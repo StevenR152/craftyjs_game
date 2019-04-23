@@ -18,19 +18,19 @@ var tileIdToImage = {
 	},
 	21 : {
 		image : "rampnorth",
-		walkable : false
+		walkable : true
 	},
 	22 : {
 		image : "rampeast",
-		walkable : false
+		walkable : true
 	},
 	23 : {
 		image : "rampsouth",
-		walkable : false
+		walkable : true
 	},
 	24 : {
 		image : "rampnorth",
-		walkable : false
+		walkable : true
 	},
 }
 var objectIdToImage = {
@@ -46,18 +46,18 @@ var objectIdToImage = {
 var decorationIdToImage = {
 	20000 : {
 		image : "shadowNorth",
-		walkable : false
+		walkable : true
 	},
 	20003 : {
 		image : "shadowSouth",
-		walkable : false
+		walkable : true
 	},
 	20001 : {
 		image : "shadowEast",
-		walkable : false
+		walkable : true
 	},
 	20002 : {
 		image : "shadowWest",
-		walkable : false
+		walkable : true
 	}
 };
