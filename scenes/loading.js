@@ -53,6 +53,26 @@ var assetsObj = {
             "tileh": 171,
             "map": { "rock": [0,0] }
         },
+        "images/tiles/Shadow East.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "shadowEast": [0,0] }
+        },
+        "images/tiles/Shadow North.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "shadowNorth": [0,0] }
+        },
+        "images/tiles/Shadow South.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "shadowSouth": [0,0] }
+        },
+        "images/tiles/Shadow West.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "shadowWest": [0,0] }
+        },
     },
 };
 

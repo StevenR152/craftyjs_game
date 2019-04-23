@@ -33,14 +33,31 @@ var tileIdToImage = {
 		walkable : false
 	},
 }
-var objectIdToImage = {};
-var decorationIdToImage = {
-	1 : {
+var objectIdToImage = {
+	10001 : {
 		image : "tree",
 		walkable : false
 	},
-	2 : {
+	10002 : {
 		image : "rock",
+		walkable : false
+	},
+};
+var decorationIdToImage = {
+	20000 : {
+		image : "shadowNorth",
+		walkable : false
+	},
+	20003 : {
+		image : "shadowSouth",
+		walkable : false
+	},
+	20001 : {
+		image : "shadowEast",
+		walkable : false
+	},
+	20002 : {
+		image : "shadowWest",
 		walkable : false
 	}
 };
