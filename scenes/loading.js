@@ -3,6 +3,11 @@ var assetsObj = {
     },
     "images": [],
     "sprites": {
+        "images/tiles/Character Boy.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "characterboy": [0,0] }
+        },
         "images/tiles/GrassBlock.png": {
             "tile": 101,
             "tileh": 171,
