@@ -5,9 +5,16 @@ class World {
 	} 
 
 	isWalkable (layer, x, y) {
+		var isWalkable = true;
 		var baseSq = this._world[layer]["base"][y][x];
 		var layerUpSq = this._world[layer - 1]["base"][y][x];
-		return baseSq != 0 && layerUpSq == 0;
+		var layerUpObj = this._world[layer - 1]["object"][y][x];
+		isWalkable = baseSq != 0 && layerUpSq == 0;
+
+		if(typeof objectIdToImage[layerUpObj] !== 'undefined') {
+			isWalkable = objectIdToImage[layerUpObj].walkable && isWalkable;
+		}
+		return isWalkable;
 	}
 
 	renderLayer (layerIndex, layerName, idToEntityDef) {
