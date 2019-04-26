@@ -7,9 +7,22 @@ Crafty.defineScene("Game", function() {
 	var world = new World(worldGrid);
 	world.render();
 
-	player = Crafty.e("Grid, BlockDebug, Keyboard, characterboy")
+	player = Crafty.e("Grid, BlockDebug, Keyboard, Collision, characterboy")
 		.setPosition(3, 6, 0)
-		.setPosition(2, 6, 1)
+		.setPosition(12, 10, 2)
+   		.collision([0, 32, 32, 0, 64, 32, 32, 64])
+		.onHit("Ramp", function(hitData, firstTimeHit) {
+			// if(!firstTimeHit) return;
+			var offset = hitData[0].obj.offset;
+			console.log(hitData[0].obj.offset)
+			var newPlayerPos = player.getPosition();
+			console.log(player.getPosition())
+			if(world.isWalkable(newPlayerPos.wl, newPlayerPos.wx + offset.x, newPlayerPos.wy + offset.y)) {
+				player.setPosition(newPlayerPos.wx + offset.x, newPlayerPos.wy + offset.y, newPlayerPos.wl - 1)
+			}
+			console.log(player.getPosition())
+
+		})
 		.bind('KeyDown', function(e) {
 			var newPlayerPos = player.getPosition();
 

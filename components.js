@@ -54,3 +54,17 @@ Crafty.c("Block", {
 		})
 	}
 });
+
+
+Crafty.c("Ramp", {
+	init : function () {
+		this.requires('Grid, Collision')
+      	this.collision([0, 32, 32, 0, 64, 32, 32, 64])
+		this.attr({
+			offset : {
+				x : 0,
+				y : -1
+			}
+		})
+	}
+});

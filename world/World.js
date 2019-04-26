@@ -39,10 +39,14 @@ class World {
 				var entityDef = idToEntityDef[tileId];
 				if(typeof entityDef !== 'undefined') {
 					var tileType = entityDef.image;
+					if(tileType.startsWith("ramp")) {
+						tileType = "Ramp, " + tileType;
+						console.log("Ramp Appended")
+					}
 					if(tileId == 0 && layerIndex != this._world.length - 1) {
 						tileType = ""; // Water should only be on base layer.
 					}
-					 Crafty.e('Grid, ' + tileType)
+					 Crafty.e('Grid, Collision, ' + tileType)
 					 .setPosition(colIndex, rowIndex, layerIndex)
 						// .attr({x: colIndex * 101, y: rowIndex * 81 + layerIndex * 40 - 41, w: 101, h: 171})	
 				}
