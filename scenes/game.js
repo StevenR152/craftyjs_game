@@ -1,6 +1,6 @@
 
 
-var player = '';
+var player = ''; // Globalise the player for easy console debugging.
 
 Crafty.defineScene("Game", function() {
 	Crafty.viewport.scale(0.5);
@@ -8,10 +8,10 @@ Crafty.defineScene("Game", function() {
 	world.render();
 
 	player = Crafty.e("Grid, BlockDebug, Keyboard, characterboy")
-		.attr({ w: 101, h: 171 })
-		.setPosition(2, 6, 0)
+		.setPosition(2, 6, 1)
 		.bind('KeyDown', function(e) {
 			var newPlayerPos = player.getPosition();
+
 			if (e.key == Crafty.keys.RIGHT_ARROW) {
 				newPlayerPos.wx += 1;
 		    } 

@@ -48,7 +48,6 @@ class World {
 						tileType = "shadowSouth";
 						Crafty.e('Block, ' + tileType)
 						.setPosition(colIndex, rowIndex, layerIndex)
-						.updateText()	
 					}
 
 					// West
@@ -57,7 +56,6 @@ class World {
 						tileType = "shadowWest";
 						Crafty.e('Block, ' + tileType)
 						.setPosition(colIndex, rowIndex, layerIndex)
-						.updateText()	
 
 					}
 
@@ -67,7 +65,6 @@ class World {
 						tileType = "shadowEast";						
 						Crafty.e('Block, ' + tileType)
 						.setPosition(colIndex, rowIndex, layerIndex)	
-						.updateText()	
 					}
 				}
 			
@@ -79,7 +76,7 @@ class World {
 		for(var layerIndex = this._world.length -1; layerIndex >= 0; layerIndex--){
 			this.renderLayer(layerIndex, "base", tileIdToImage);
 			if(layerIndex < this._world.length -1) {
-				this.renderShadows(layerIndex, decorationIdToImage)
+				// this.renderShadows(layerIndex, decorationIdToImage)
 			}
 			this.renderLayer(layerIndex, "object", objectIdToImage)
 			this.renderLayer(layerIndex, "decorative", decorationIdToImage)

@@ -33,9 +33,9 @@ Crafty.c('Grid', {
 			wy : y,
 			wl : l,
 			x: x * Game.map_grid.tile.width,
-	// .attr({x: colIndex * 101, y: rowIndex * 81 + layerIndex * 40 - 41, w: 101, h: 171})	
-			y: y * Game.map_grid.tile.height + 40 * l - 41 
+			y: y * Game.map_grid.tile.height + (l - 2) * 40 - 50
 		});	
+		this.trigger("GridMove", {wx: this.wx, wy: this.wy, wl: this.wl});
 		return this;
 	}
 })
@@ -47,12 +47,10 @@ Crafty.c("BlockDebug", {
 			w: Game.map_grid.tile.width,
 			h: Game.map_grid.tile.height
 		})
+		this.bind("GridMove", function (pos) {
+			this.text(function () { return "{" + this.wx + "," + this.wy + "," + this.wl + "}" });
+		})
 		this.textFont({ size: '20px'});
-		this.text(function () { return "{" + this.wx + "," + this.wy + "," + this.wl + "}" });
-	},
-
-	updateText : function() {
-		this.text(function () { return "{" + this.wx + "," + this.wy + "," + this.wl + "}" });
 	}
 })
 
