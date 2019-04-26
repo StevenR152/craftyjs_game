@@ -2,66 +2,82 @@
 var tileIdToImage = {
 	0 : {
 		image : "waterblock",
-		walkable : false
+		canStandOn : false,
+		isSolid : true
 	},
 	1 : {
 		image : "grassblock",
-		walkable : false
+		canStandOn : true,
+		isSolid : true
 	},
 	2 : {
 		image : "sandblock",
-		walkable : false
+		canStandOn : true,
+		isSolid : true
 	},
 	3 : {
 		image : "stoneblock",
-		walkable : false
+		canStandOn : true,
+		isSolid : true
 	},
 	21 : {
 		image : "rampnorth",
-		walkable : true
+		canStandOn : true,
+		isSolid : false
 	},
 	22 : {
 		image : "rampeast",
-		walkable : true
+		canStandOn : true,
+		isSolid : false
 	},
 	23 : {
 		image : "rampsouth",
-		walkable : true
+		canStandOn : true,
+		isSolid : false
 	},
 	24 : {
 		image : "rampnorth",
-		walkable : true
+		canStandOn : true,
+		isSolid : false
 	},
 }
 var objectIdToImage = {
 	10001 : {
 		image : "tree",
-		walkable : false
+		canStandOn : false,
+		isSolid : true
 	},
 	10002 : {
 		image : "rock",
-		walkable : false
+		canStandOn : false,
+		isSolid : true
 	},
 	10003 : {
 		image : "selector",
-		walkable : true
+		canStandOn : false,
+		isSolid : false
 	},
 };
+
 var decorationIdToImage = {
 	20000 : {
 		image : "shadowNorth",
-		walkable : true
+		canStandOn : false,
+		isSolid : false
 	},
 	20003 : {
 		image : "shadowSouth",
-		walkable : true
+		canStandOn : false,
+		isSolid : false
 	},
 	20001 : {
 		image : "shadowEast",
-		walkable : true
+		canStandOn : false,
+		isSolid : false
 	},
 	20002 : {
 		image : "shadowWest",
-		walkable : true
+		canStandOn : false,
+		isSolid : false
 	}
 };

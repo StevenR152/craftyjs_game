@@ -1,20 +1,35 @@
 class World {
 
-	constructor(world) {
+	constructor(world, idToEntityDef) {
 		this._world = world;
+		this._idToEntityDev = idToEntityDef;
 	} 
 
 	isWalkable (layer, x, y) {
 		var isWalkable = true;
+		
+		var isBaseWalkable = false;
 		var baseSq = this._world[layer]["base"][y][x];
-		var layerUpSq = this._world[layer - 1]["base"][y][x];
-		var layerUpObj = this._world[layer - 1]["object"][y][x];
-		isWalkable = baseSq != 0 && layerUpSq == 0;
-
-		if(typeof objectIdToImage[layerUpObj] !== 'undefined') {
-			isWalkable = objectIdToImage[layerUpObj].walkable && isWalkable;
+		if(typeof tileIdToImage[baseSq] !== 'undefined') {
+			isBaseWalkable = tileIdToImage[baseSq].canStandOn;
 		}
-		return isWalkable;
+
+		var isLayerUpWalkable = false;
+		var layerUpSq = this._world[layer - 1]["base"][y][x];
+		if(layerUpSq == 0) {
+			isLayerUpWalkable = true;
+		} else if(typeof tileIdToImage[layerUpSq] !== 'undefined') {
+			isLayerUpWalkable = !tileIdToImage[layerUpSq].isSolid;
+		}
+
+		// Check for objects
+		var isObjectNotInWay = true;
+		var layerUpObj = this._world[layer - 1]["object"][y][x];
+		if(typeof objectIdToImage[layerUpObj] !== 'undefined') {
+			isObjectNotInWay = !objectIdToImage[layerUpObj].isSolid;
+		}
+
+		return isBaseWalkable && isLayerUpWalkable && isObjectNotInWay;
 	}
 
 	renderLayer (layerIndex, layerName, idToEntityDef) {

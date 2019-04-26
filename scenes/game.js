@@ -8,6 +8,7 @@ Crafty.defineScene("Game", function() {
 	world.render();
 
 	player = Crafty.e("Grid, BlockDebug, Keyboard, characterboy")
+		.setPosition(3, 6, 0)
 		.setPosition(2, 6, 1)
 		.bind('KeyDown', function(e) {
 			var newPlayerPos = player.getPosition();
@@ -23,7 +24,7 @@ Crafty.defineScene("Game", function() {
 				newPlayerPos.wy += 1;
 		    }
 
-			if(world.isWalkable(2, newPlayerPos.wx, newPlayerPos.wy)) {
+			if(world.isWalkable(newPlayerPos.wl + 1, newPlayerPos.wx, newPlayerPos.wy)) {
 				player.setPosition(newPlayerPos.wx, newPlayerPos.wy, newPlayerPos.wl)
 			}
 		});
