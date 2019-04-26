@@ -36,7 +36,7 @@ var tileIdToImage = {
 		isSolid : false
 	},
 	24 : {
-		image : "rampnorth",
+		image : "rampwest",
 		canStandOn : true,
 		isSolid : false
 	},
