@@ -20,8 +20,9 @@ class World {
 					if(tileId == 0 && layerIndex != this._world.length - 1) {
 						tileType = ""; // Water should only be on base layer.
 					}
-					 Crafty.e('2D, DOM, ' + tileType)
-						.attr({x: colIndex * 101, y: rowIndex * 81 + layerIndex * 40 - 121, w: 101, h: 171})	
+					 Crafty.e('Grid, ' + tileType)
+					 .setPosition(colIndex, rowIndex, layerIndex)
+						// .attr({x: colIndex * 101, y: rowIndex * 81 + layerIndex * 40 - 41, w: 101, h: 171})	
 				}
 			}
 		}
@@ -45,24 +46,28 @@ class World {
 					var tileIdNorth1Sq = this._world[layerIndex][layerName][rowIndex + 1][colIndex]
 					if(tileIdNorth1Sq != 0) {
 						tileType = "shadowSouth";
-						Crafty.e('2D, DOM, ' + tileType)
-						 .attr({x: colIndex * 101, y: rowIndex * 81 + layerIndex * 40 - 121, w: 101, h: 171})	
+						Crafty.e('Block, ' + tileType)
+						.setPosition(colIndex, rowIndex, layerIndex)
+						.updateText()	
 					}
 
 					// West
 					var tileIdNorth1Sq = this._world[layerIndex][layerName][rowIndex][colIndex - 1]
 					if(tileIdNorth1Sq != 0) {
 						tileType = "shadowWest";
-						Crafty.e('2D, DOM, Color, ' + tileType)
-						 .attr({x: colIndex * 101, y: rowIndex * 81 + (layerIndex + 1) * 40 - 121, w: 101, h: 171})	
+						Crafty.e('Block, ' + tileType)
+						.setPosition(colIndex, rowIndex, layerIndex)
+						.updateText()	
+
 					}
 
 					// East
 					var tileIdNorth1Sq = this._world[layerIndex][layerName][rowIndex][colIndex + 1]
 					if(tileIdNorth1Sq != 0) {
-						tileType = "shadowEast";
-						Crafty.e('2D, DOM, ' + tileType)
-						 .attr({x: colIndex * 101, y: rowIndex * 81 + (layerIndex + 1) * 40 - 121, w: 101, h: 171})	
+						tileType = "shadowEast";						
+						Crafty.e('Block, ' + tileType)
+						.setPosition(colIndex, rowIndex, layerIndex)	
+						.updateText()	
 					}
 				}
 			
