@@ -1,12 +1,3 @@
-var Game = {
-	map_grid : {
-		tile : {
-			width : 101,
-			height : 81
-		}
-	}
-}
-
 Crafty.c('Grid', {
 	init : function () {
 		this.requires('2D, DOM')
