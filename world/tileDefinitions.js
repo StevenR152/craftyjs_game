@@ -40,6 +40,10 @@ var objectIdToImage = {
 	},
 	10002 : {
 		image : "rock",
+		walkable : false
+	},
+	10003 : {
+		image : "selector",
 		walkable : true
 	},
 };
