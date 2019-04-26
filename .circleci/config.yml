@@ -13,7 +13,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Deploy to S3 bucket
-          command: aws s3 sync . s3://codersuk-craftyjs-game/${CIRCLE_BRANCH} --exclude '.circleci/*' --exclude '.git/*'  
+          command: aws s3 sync . s3://flyingkiwi-public-games/${CIRCLE_BRANCH} --exclude '.circleci/*' --exclude '.git/*'  
 
 workflows:
   version: 2
