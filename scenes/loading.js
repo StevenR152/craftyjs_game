@@ -105,6 +105,11 @@ var assetsObj = {
             "tileh": 171,
             "map": { "shadowSouthWest": [0,0] }
         },
+        "images/tiles/Selector.png": {
+            "tile": 101,
+            "tileh": 171,
+            "map": { "selector": [0,0] }
+        },
     },
 };
 

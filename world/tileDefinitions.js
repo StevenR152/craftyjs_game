@@ -42,6 +42,10 @@ var objectIdToImage = {
 		image : "rock",
 		walkable : false
 	},
+	10003 : {
+		image : "selector",
+		walkable : true
+	},
 };
 var decorationIdToImage = {
 	20000 : {
